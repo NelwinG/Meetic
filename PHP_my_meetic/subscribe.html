@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/MEETIC.png" alt="logo du site">
+    </header>
+    <div class="inscription">    
+        
+        <form action="process_subscribe.php" method="POST">
+            
+            <label class="label" for="nom">Nom :</label>
+            <input class="form-control control" type="text"  id="nom" name="NAME" required />
+
+            <label class="label" for="prenom">Prenom :</label>
+            <input class="form-control control" type="text"  id="prenom" name="SURNAME" required/>
+
+            <label class="label" for="date">Date de naissance :</label>
+            <input class="form-control control" type="date"  id="date" name="DATE" required/>
+            
+            <label class="label" for="sex">Civilité :</label>
+            <select class="form-control control" name="SEX" id="SEX"  required>
+                <option value="empty"></option>
+                <option value="homme">homme</option>
+                <option value="femme">femme</option>
+                <option value="transgenre">transgenre</option>
+            </select>
+
+            <label class="label" for="ville">Ville :</label>
+            <input class="form-control control" type="text"  id="city" name="CITY" required/>
+
+            <label class="label" for="email">Votre email :</label>
+            <input class="form-control control" type="email"  id="email" name="EMAIL" required/>
+
+            <label class="label" for="password">Votre mot de passe :</label>
+            <input class="form-control control" type="password"  id="password" name="PASSWORD" required/>
+
+            <label class="label" for="password">Confirmer votre mot de passe :</label>
+            <input class="form-control control" type="password"  id="password" name="PASSWORD2" required/>
+
+            <button class="btn btn-outline-success my-2 my-sm-0 button" type="submit">S'inscrire</button>
+            </form>
+        </div>
+
+        <a href="http://localhost/connect.php"><button class="btn btn-outline-success my-2 my-sm-0 topbutton" type="submit">Accès membre</button></a>   
+        
+    </body>
+    </html>
+    

@@ -1,0 +1,37 @@
+
+
+#slide {
+    float: left;
+    position: relative;
+    width: 818px;
+    height: 283px;
+    border: 1px solid #000;
+    background-color: #ccc;
+
+}
+
+#slide ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#slide #suivant, #slide #precedent {
+    top: 100px;
+    cursor: pointer;
+    padding: 5px;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #000;
+}
+
+#slide #suivant {
+    right: 0px;
+    
+}
+
+#slide #precedent {
+    left: 0px;
+}
